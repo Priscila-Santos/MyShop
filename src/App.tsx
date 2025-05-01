@@ -1,9 +1,8 @@
-import { GlobalStyles } from './styles/GlobalStyles';
-import { Header } from './components/Header/Header';
-import { ProductList } from './components/ProductList/ProductList';
-import { Provider } from 'react-redux';
-import { store } from './components/redux/store';
-
+import { GlobalStyles } from "./styles/GlobalStyles";
+import { Header } from "./components/Header/Header";
+import { ProductList } from "./components/ProductList/ProductList";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
 
 function App() {
   return (
@@ -11,9 +10,8 @@ function App() {
       <GlobalStyles />
       <Header />
       <ProductList />
-      
     </Provider>
   );
-}  
+}
 
 export default App;

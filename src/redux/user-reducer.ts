@@ -8,7 +8,7 @@ interface UserState {
     user: User | null;
 }
 
-const InitialState: UserState = {
+const initialState: UserState = {
     user: null,
 };
 
@@ -17,7 +17,7 @@ interface UserAction {
     payload?: User;
 }
 
-export function userReducer(state = InitialState, action: UserAction): UserState {
+export function userReducer(state = initialState, action: UserAction): UserState {
     if (action.type === "user/login") {
         return {
             ...state,

@@ -43,6 +43,8 @@ export const CartProductItem = styled.li`
 export const CartProductImage = styled.img`
     width: 50px;
     height: 50px;
+    border-radius: 5px;
+    margin-right: 1rem;
     object-fit: cover;
 `;
 
@@ -55,6 +57,19 @@ export const CartProductPrice = styled.strong`
     font-size: 1rem;
     font-weight: 500; 
     color: #666;
+`;
+
+export const RemoveProduct = styled.button`
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #ff0000;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    &:hover {
+        color: #ff4d4d;
+    }
 `;
 
 export const CartTotal = styled.strong``;
