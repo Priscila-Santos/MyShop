@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# 🛍️ MyShop . - Loja Virtual em React + TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma aplicação de loja virtual simulada desenvolvida com **React** e **TypeScript**, que consome dados da API pública [Fake Store API](https://fakestoreapi.com/). A interface é responsiva e estilizada com **styled-components**, e a lógica de estado global é gerenciada com **Redux**. Os testes automatizados são implementados com **Jest** e **React Testing Library**.
 
-## Available Scripts
+> 🔗 Acesse o projeto em produção: [MyShop.](https://my-shop-zeta-navy.vercel.app/)
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## 🚀 Tecnologias Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ⚛️ React + TypeScript
+- 🎨 styled-components (com suporte a TS)
+- 📦 Redux
+- 🔗 API: [FakeStoreAPI](https://fakestoreapi.com/)
+- 🧪 Jest + React Testing Library
+- 🌐 Deploy via [Vercel](https://vercel.com)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+## 📦 Funcionalidades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Listagem de produtos com imagens, nomes e preços.
+- Visualização de avaliação com estrelas.
+- Adição e remoção de produtos ao carrinho de compras.
+- Layout responsivo.
+- Integração com API REST.
+- Testes unitários de componentes.
 
-### `yarn build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Instalação e Execução Local
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone o repositório:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/seu-usuario/nome-do-projeto.git
+cd nome-do-projeto
+```
+## 📦 Scripts disponíveis
+No diretório do projeto, você pode rodar:
 
-### `yarn eject`
+**`yarn start`**
+#### Roda a aplicação em modo desenvolvimento.
+Acesse http://localhost:3000 no navegador.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**`yarn test`**
+#### Inicia o test runner no modo interativo.
+Utiliza Jest e React Testing Library.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**`yarn build`**
+#### Cria uma versão de produção na pasta build.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**`yarn eject`**
+#### Remove a configuração do CRA e expõe toda a configuração (não recomendado se você não precisa de customizações profundas).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🧪 Testes
+Os testes cobrem componentes principais como ProductCard, Cart, Header, entre outros. Os testes são implementados com Jest e Testing Library.
 
-## Learn More
+## 📁 Estrutura do Projeto
+```bash
+src/
+├── components/        # Componentes reutilizáveis
+├── pages/             # Páginas principais (Home, Produto)
+├── redux/             # Lógica de estado global (slices, store)
+├── styles/            # Estilização com styled-components
+└── tests/             # Testes unitários
+```
+## Aprendizado
+- Este projeto serviu como prática de:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Integração com APIs REST externas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Uso de Redux com TypeScript
+
+- Componentização e boas práticas com React
+
+- Testes automatizados com Jest
+
+- Deploy contínuo com Vercel
+
