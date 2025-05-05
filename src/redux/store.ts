@@ -8,13 +8,5 @@ export const store = configureStore({
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(logger),
 });
 
-// import { createStore, applyMiddleware, Store } from "redux";
-// import logger from "redux-logger";
-// import { rootReducer, RootReducer } from "./root-reducer";
-
-// export const store: Store<RootReducer> = createStore(
-//   rootReducer,
-//   applyMiddleware(logger)
-// );
 
 

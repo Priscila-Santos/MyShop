@@ -1,10 +1,28 @@
 import styled from "styled-components";
 
 interface ContainerProps {
-    showCart: boolean;
-}
+    $showCart: boolean;
+  }
+  
+  export const Container = styled.aside<ContainerProps>`
+    right: ${(props) => (props.$showCart ? "0" : "-350px")};
 
-export const Container = styled.aside<ContainerProps>`
+    position: fixed;
+    top: 0;
+    transition: right 0.5s ease-in-out;
+    
+    width: 350px;
+    height: 100vh;
+    //margin-top: 60px;
+    background-color: white;
+
+    padding: 2rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
+`;
+
+  
+
+/* export const Container = styled.aside<ContainerProps>`
     position: fixed;
     top: 0;
     right: ${(props) => (props.showCart ? "0" : "-350px")};
@@ -18,7 +36,7 @@ export const Container = styled.aside<ContainerProps>`
     padding: 2rem;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.25);
 
-`;
+`; */
 
 export const CartTitle = styled.h1`
     font-size: 2rem;

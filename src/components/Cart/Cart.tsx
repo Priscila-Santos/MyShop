@@ -19,7 +19,7 @@ export const Cart: React.FC<CartProps> = ({ showCart, cart }) => {
   const dispatch = useDispatch();
 
   return (
-    <S.Container showCart={showCart}>
+    <S.Container $showCart={showCart}>
       <S.CartTitle>Carrinho</S.CartTitle>
 
       <S.CartProductList>

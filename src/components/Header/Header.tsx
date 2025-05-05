@@ -38,8 +38,8 @@ export const Header: React.FC = () => {
       <S.Wrapper>
         <S.HeaderTitle>MyShop.</S.HeaderTitle>
 
-        <S.ButtonWrapper showCart={showCart}>
-          <S.AuthButton isLogged={isLogged} onClick={handleUserAuth}>
+        <S.ButtonWrapper $showCart={showCart}>
+          <S.AuthButton $isLogged={isLogged} onClick={handleUserAuth}>
             {isLogged ? "Logout" : "Login"}{" "}
             {isLogged ? FiLogOut({}) : FiLogIn({})}
           </S.AuthButton>

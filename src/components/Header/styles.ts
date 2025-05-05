@@ -23,28 +23,36 @@ export const HeaderTitle= styled.h1`
 `;
 
 interface ButtonWrapperProps {
-    showCart: boolean;
+    $showCart: boolean;
 }
 
 export const ButtonWrapper = styled.div<ButtonWrapperProps>`
-    display: flex;
-    gap: 1rem;
-    margin-right: ${(props) => (props.showCart ? "215px" : "100px")};
-    transition: margin-right 0.5s ease-in-out;
-    
-
+  display: flex;
+  gap: 1rem;
+  margin-right: ${(props) => (props.$showCart ? "215px" : "100px")};
+  transition: margin-right 0.5s ease-in-out;
 `;
 
-interface AuthButtonProps {
-    isLogged: boolean;
-}
+// export const ButtonWrapper = styled.div<ButtonWrapperProps>`
+//     display: flex;
+//     gap: 1rem;
+//     margin-right: ${(props) => (props.showCart ? "215px" : "100px")};
+//     transition: margin-right 0.5s ease-in-out;
+    
 
-export const AuthButton = styled.button<AuthButtonProps>`
-    border: none;
+// `;
+
+// interface AuthButtonProps {
+//     isLogged: boolean;
+// }
+
+export const AuthButton = styled.button<{ $isLogged?: boolean }>`
+  background-color: ${({ $isLogged }) => ($isLogged ? "red" : "green")};
+
+  border: none;
     border-radius: 5px;
     height: 30px;
     padding: 0 1rem;
-    background-color: ${(props) => (props.isLogged ? "red" : "green")};
     color: white;
     font-size: 0.75rem;
 
@@ -56,6 +64,24 @@ export const AuthButton = styled.button<AuthButtonProps>`
         font-size: 0.75rem;
     }
 `;
+
+// export const AuthButton = styled.button<AuthButtonProps>`
+//     border: none;
+//     border-radius: 5px;
+//     height: 30px;
+//     padding: 0 1rem;
+//     background-color: ${(props) => (props.isLogged ? "red" : "green")};
+//     color: white;
+//     font-size: 0.75rem;
+
+//     display: flex;
+//     align-items: center;
+//     gap: 0.3rem;
+
+//     svg {
+//         font-size: 0.75rem;
+//     }
+// `;
 
 
 export const CartButton = styled.button`
